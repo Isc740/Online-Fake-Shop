@@ -1,5 +1,5 @@
 function createProduct(item) {
-    var element = `
+    const element = `
         <div class="product-container">
             <h2 class="product-title">${item.title}</h2>
             <img class="product-img" src="${item.image}" alt="product image">
