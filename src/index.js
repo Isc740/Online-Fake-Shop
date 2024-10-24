@@ -1,5 +1,5 @@
 function createProduct(item) {
-    const element = `
+    return `
         <div class="product-container">
             <h2 class="product-title">${item.title}</h2>
             <img class="product-img" src="${item.image}" alt="product image">
@@ -12,7 +12,6 @@ function createProduct(item) {
             <p class="p-rate">Amount bought:<strong>${item.rating.count}</strong></p>
             <p class="p-rate">Price:<strong class="product-price">$${item.price}</strong></p>
         </div>`;
-    return element;
 }
 
 function listenBuyButtonClick(data, index) {
